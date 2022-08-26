@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   padding: 0;
@@ -7,35 +7,218 @@
   box-sizing: border-box;
 }
 
-html, body{
-  
-  scroll-behavior: smooth;
-
+main{
+  position: relative;
+  height: 100%;
 }
 
-a{
+html, body{
+ 
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
+  background: #F2F2F2;
+}
+
+img{
+  width: 100%;
+}
+
+
+/*    navbar*/
+
+.navbar .container img{
+  width: 70px;
+  display: block;
+  float: left;
+  margin: 10px 10px;
+}
+
+
+ul li a{
   text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color:#F2F2F2;
+  font-weight: 500;
+  word-spacing: 0.25em;
+  padding: 10px;
+  margin: 0 25px;
 }
 
 ul{
 
-  display: block;
+  display: flex;
   list-style-type: none;
   float: right;
-
+  margin-top: 30px;
+  margin-right: 10%;
 
 }
 
 .container {
   margin: auto;
   max-width: 1300px;
-  overflow: auto;
-  padding: 0 10px;
+  padding: 0 60px;
 }
 
 
 .navbar {
-  background-color: purple; /*  color*/
-  height: 80px;
+  background-color:  #8C0335; 
+  height: 90px;
+  padding: 0 10px ;
+}
+
+
+
+.navbar a:hover {
+  border-bottom: 2px solid #F2F2F2;
+}
+
+
+
+
+
+/*   registro y clima*/
+
+#registro{
+  height:100%;
+}
+
+
+.contenedor-form{
+  float: right;
+  height:100%;
+  width: 50%;
+  position: relative;
+  
+}
+
+
+.form-titulo{
+  top:30px;
+  left: 50px;
+  position: absolute;
+ } 
+
+ .form-titulo h2{
+  font-weight: 400;
+  font-size:25px;
+}
+
+#formulario{
+  
+  margin-top: 150px;
+  margin-left: 150px;
+  float:inherit;
+  position: absolute;
+  
+}
+
+.form-control{
+  margin-bottom:15px;
+  width: 320px;
+  height:40px;
+  border:none;
+  border-radius: 7px;
+  background: #e9e8e8;
+  font-size: 16px;
   padding: 0 20px;
 }
+
+
+
+
+.btn-light{
+  display: block;
+  margin-top: 30px;
+  padding: 0px 30px;
+  width: 320px;
+  height:40px;
+  font-size:15px;
+  font-weight:lighter;
+  cursor: pointer;
+  border-radius:30px;
+  color:#FFF8F0;
+  letter-spacing:1.5px;
+  background-color:#8C0335;
+  border:none;
+  
+}
+
+.btn-light:hover{
+
+  box-shadow:0 15px 10px 1px rgba(0, 0, 0, 0.45);
+}
+
+
+/* clima*/
+
+.contenedor-clima h3{
+
+  font-weight: 300;
+  font-size:20px;
+
+}
+
+.contenedor-clima{
+  margin: 70px 0;
+  float:left;
+  width:40%;
+  height:100%;
+  box-shadow:  rgba(136, 165, 191, 0.48) 10px 0px 16px 0px;
+}
+
+.contenedor-clima h3{
+  margin-left: 90px;
+  margin-top: 50px;
+
+}
+
+
+
+/*       Footer                 */
+
+footer {
+  background-color: #D92958;
+  padding: 0; /* */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  color: #FFF8F0;
+}
+
+
+.copyright{
+
+  margin-top: 20px;
+  margin-left: 20px;
+  
+}
+.copyright h2{
+  font-size: 15px;
+
+}
+
+.copyright p{
+  font-size:12px;
+}
+
+.chat a img {
+
+  width: 50px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 0;
+  display: block;
+  
+}
+
+
+
+
+
+
+
+
+
